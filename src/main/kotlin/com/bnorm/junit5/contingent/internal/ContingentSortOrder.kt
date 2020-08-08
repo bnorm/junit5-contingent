@@ -1,12 +1,13 @@
-package com.bnorm.junit5.contingent
+package com.bnorm.junit5.contingent.internal
 
+import com.bnorm.junit5.contingent.Contingent
 import org.junit.jupiter.api.MethodDescriptor
 import org.junit.jupiter.api.MethodOrderer
 import org.junit.jupiter.api.MethodOrdererContext
 import org.junit.jupiter.api.Tag
 import java.util.ArrayDeque
 
-class ContingentSortOrder : MethodOrderer {
+internal class ContingentSortOrder : MethodOrderer {
     override fun orderMethods(context: MethodOrdererContext) {
         val nodes = context.methodDescriptors.map { descriptor ->
             val gatedAnnotation: Contingent? = descriptor.method.getAnnotation(Contingent::class.java)

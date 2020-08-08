@@ -1,5 +1,6 @@
-package com.bnorm.junit5.contingent
+package com.bnorm.junit5.contingent.internal
 
+import com.bnorm.junit5.contingent.Contingent
 import org.junit.jupiter.api.Tag
 import org.junit.jupiter.api.extension.AfterEachCallback
 import org.junit.jupiter.api.extension.BeforeEachCallback
@@ -8,7 +9,7 @@ import org.junit.jupiter.api.fail
 import org.opentest4j.IncompleteExecutionException
 import java.lang.reflect.Method
 
-class ContingentCallback : BeforeEachCallback, AfterEachCallback {
+internal class ContingentCallback : BeforeEachCallback, AfterEachCallback {
     companion object {
         private val NAMESPACE = ExtensionContext.Namespace.create(ContingentCallback::class.java)
 
