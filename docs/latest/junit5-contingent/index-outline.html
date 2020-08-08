@@ -23,7 +23,7 @@
 <link rel="stylesheet" href="../style.css">
 </HEAD>
 <BODY>
-<a href="/home/runner/work/junit5-contingent/junit5-contingent/build/dokka/junit5-contingent/index"><a href="com.bnorm.junit5.contingent/-contingent/index.html"><span class="keyword">annotation</span> <span class="keyword">class </span><span class="identifier">Contingent</span></a></a><br/>
+<a href="/home/runner/work/junit5-contingent/junit5-contingent/build/dokka/junit5-contingent/index"><a href="com.bnorm.junit5.contingent/-contingent/index.html"><span class="identifier">@Target</span><span class="symbol">(</span>[AnnotationTarget.FUNCTION]<span class="symbol">)</span> <span class="keyword">annotation</span> <span class="keyword">class </span><span class="identifier">Contingent</span></a></a><br/>
 <ul>
 <HTML>
 <HEAD>
@@ -37,22 +37,7 @@
 </BODY>
 </HTML>
 </ul>
-<a href="/home/runner/work/junit5-contingent/junit5-contingent/build/dokka/junit5-contingent/index"><a href="com.bnorm.junit5.contingent/-contingent-callback/index.html"><span class="keyword">class </span><span class="identifier">ContingentCallback</span>&nbsp;<span class="symbol">:</span>&nbsp;<span class="identifier">BeforeEachCallback</span><span class="symbol">, </span><span class="identifier">AfterEachCallback</span></a></a><br/>
-<ul>
-<HTML>
-<HEAD>
-<meta charset="UTF-8">
-<title>Module Contents</title>
-<link rel="stylesheet" href="../style.css">
-</HEAD>
-<BODY>
-<a href="/home/runner/work/junit5-contingent/junit5-contingent/build/dokka/junit5-contingent/index"><a href="com.bnorm.junit5.contingent/-contingent-callback/-init-.html"><span class="identifier">ContingentCallback</span><span class="symbol">(</span><span class="symbol">)</span></a></a><br/>
-<a href="/home/runner/work/junit5-contingent/junit5-contingent/build/dokka/junit5-contingent/index"><a href="com.bnorm.junit5.contingent/-contingent-callback/after-each.html"><span class="keyword">fun </span><span class="identifier">afterEach</span><span class="symbol">(</span><span class="identifier" id="com.bnorm.junit5.contingent.ContingentCallback$afterEach(org.junit.jupiter.api.extension.ExtensionContext)/context">context</span><span class="symbol">:</span>&nbsp;<span class="identifier">ExtensionContext</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></a></a><br/>
-<a href="/home/runner/work/junit5-contingent/junit5-contingent/build/dokka/junit5-contingent/index"><a href="com.bnorm.junit5.contingent/-contingent-callback/before-each.html"><span class="keyword">fun </span><span class="identifier">beforeEach</span><span class="symbol">(</span><span class="identifier" id="com.bnorm.junit5.contingent.ContingentCallback$beforeEach(org.junit.jupiter.api.extension.ExtensionContext)/context">context</span><span class="symbol">:</span>&nbsp;<span class="identifier">ExtensionContext</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></a></a><br/>
-</BODY>
-</HTML>
-</ul>
-<a href="/home/runner/work/junit5-contingent/junit5-contingent/build/dokka/junit5-contingent/index"><a href="com.bnorm.junit5.contingent/-contingent-extension/index.html"><span class="identifier">@TestMethodOrder</span><span class="symbol">(</span>NormalClass(value=com/bnorm/junit5/contingent/ContingentSortOrder)<span class="symbol">)</span> <span class="identifier">@ExtendWith</span><span class="symbol">(</span>[NormalClass(value=com/bnorm/junit5/contingent/ContingentCallback)]<span class="symbol">)</span> <span class="keyword">annotation</span> <span class="keyword">class </span><span class="identifier">ContingentExtension</span></a></a><br/>
+<a href="/home/runner/work/junit5-contingent/junit5-contingent/build/dokka/junit5-contingent/index"><a href="com.bnorm.junit5.contingent/-contingent-extension/index.html"><span class="identifier">@TestMethodOrder</span><span class="symbol">(</span>NormalClass(value=com/bnorm/junit5/contingent/internal/ContingentSortOrder)<span class="symbol">)</span> <span class="identifier">@ExtendWith</span><span class="symbol">(</span>[NormalClass(value=com/bnorm/junit5/contingent/internal/ContingentCallback)]<span class="symbol">)</span> <span class="identifier">@Target</span><span class="symbol">(</span>[AnnotationTarget.CLASS]<span class="symbol">)</span> <span class="keyword">annotation</span> <span class="keyword">class </span><span class="identifier">ContingentExtension</span></a></a><br/>
 <ul>
 <HTML>
 <HEAD>
@@ -62,20 +47,6 @@
 </HEAD>
 <BODY>
 <a href="/home/runner/work/junit5-contingent/junit5-contingent/build/dokka/junit5-contingent/index"><a href="com.bnorm.junit5.contingent/-contingent-extension/-init-.html"><span class="identifier">ContingentExtension</span><span class="symbol">(</span><span class="symbol">)</span></a></a><br/>
-</BODY>
-</HTML>
-</ul>
-<a href="/home/runner/work/junit5-contingent/junit5-contingent/build/dokka/junit5-contingent/index"><a href="com.bnorm.junit5.contingent/-contingent-sort-order/index.html"><span class="keyword">class </span><span class="identifier">ContingentSortOrder</span>&nbsp;<span class="symbol">:</span>&nbsp;<span class="identifier">MethodOrderer</span></a></a><br/>
-<ul>
-<HTML>
-<HEAD>
-<meta charset="UTF-8">
-<title>Module Contents</title>
-<link rel="stylesheet" href="../style.css">
-</HEAD>
-<BODY>
-<a href="/home/runner/work/junit5-contingent/junit5-contingent/build/dokka/junit5-contingent/index"><a href="com.bnorm.junit5.contingent/-contingent-sort-order/-init-.html"><span class="identifier">ContingentSortOrder</span><span class="symbol">(</span><span class="symbol">)</span></a></a><br/>
-<a href="/home/runner/work/junit5-contingent/junit5-contingent/build/dokka/junit5-contingent/index"><a href="com.bnorm.junit5.contingent/-contingent-sort-order/order-methods.html"><span class="keyword">fun </span><span class="identifier">orderMethods</span><span class="symbol">(</span><span class="identifier" id="com.bnorm.junit5.contingent.ContingentSortOrder$orderMethods(org.junit.jupiter.api.MethodOrdererContext)/context">context</span><span class="symbol">:</span>&nbsp;<span class="identifier">MethodOrdererContext</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></a></a><br/>
 </BODY>
 </HTML>
 </ul>
@@ -91,7 +62,7 @@
 <link rel="stylesheet" href="../style.css">
 </HEAD>
 <BODY>
-<a href="/home/runner/work/junit5-contingent/junit5-contingent/build/dokka/junit5-contingent/index"><a href="com.bnorm.junit5.contingent/-contingent/index.html"><span class="keyword">annotation</span> <span class="keyword">class </span><span class="identifier">Contingent</span></a></a><br/>
+<a href="/home/runner/work/junit5-contingent/junit5-contingent/build/dokka/junit5-contingent/index"><a href="com.bnorm.junit5.contingent/-contingent/index.html"><span class="identifier">@Target</span><span class="symbol">(</span>[AnnotationTarget.FUNCTION]<span class="symbol">)</span> <span class="keyword">annotation</span> <span class="keyword">class </span><span class="identifier">Contingent</span></a></a><br/>
 <ul>
 <HTML>
 <HEAD>
@@ -105,22 +76,7 @@
 </BODY>
 </HTML>
 </ul>
-<a href="/home/runner/work/junit5-contingent/junit5-contingent/build/dokka/junit5-contingent/index"><a href="com.bnorm.junit5.contingent/-contingent-callback/index.html"><span class="keyword">class </span><span class="identifier">ContingentCallback</span>&nbsp;<span class="symbol">:</span>&nbsp;<span class="identifier">BeforeEachCallback</span><span class="symbol">, </span><span class="identifier">AfterEachCallback</span></a></a><br/>
-<ul>
-<HTML>
-<HEAD>
-<meta charset="UTF-8">
-<title>Module Contents</title>
-<link rel="stylesheet" href="../style.css">
-</HEAD>
-<BODY>
-<a href="/home/runner/work/junit5-contingent/junit5-contingent/build/dokka/junit5-contingent/index"><a href="com.bnorm.junit5.contingent/-contingent-callback/-init-.html"><span class="identifier">ContingentCallback</span><span class="symbol">(</span><span class="symbol">)</span></a></a><br/>
-<a href="/home/runner/work/junit5-contingent/junit5-contingent/build/dokka/junit5-contingent/index"><a href="com.bnorm.junit5.contingent/-contingent-callback/after-each.html"><span class="keyword">fun </span><span class="identifier">afterEach</span><span class="symbol">(</span><span class="identifier" id="com.bnorm.junit5.contingent.ContingentCallback$afterEach(org.junit.jupiter.api.extension.ExtensionContext)/context">context</span><span class="symbol">:</span>&nbsp;<span class="identifier">ExtensionContext</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></a></a><br/>
-<a href="/home/runner/work/junit5-contingent/junit5-contingent/build/dokka/junit5-contingent/index"><a href="com.bnorm.junit5.contingent/-contingent-callback/before-each.html"><span class="keyword">fun </span><span class="identifier">beforeEach</span><span class="symbol">(</span><span class="identifier" id="com.bnorm.junit5.contingent.ContingentCallback$beforeEach(org.junit.jupiter.api.extension.ExtensionContext)/context">context</span><span class="symbol">:</span>&nbsp;<span class="identifier">ExtensionContext</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></a></a><br/>
-</BODY>
-</HTML>
-</ul>
-<a href="/home/runner/work/junit5-contingent/junit5-contingent/build/dokka/junit5-contingent/index"><a href="com.bnorm.junit5.contingent/-contingent-extension/index.html"><span class="identifier">@TestMethodOrder</span><span class="symbol">(</span>NormalClass(value=com/bnorm/junit5/contingent/ContingentSortOrder)<span class="symbol">)</span> <span class="identifier">@ExtendWith</span><span class="symbol">(</span>[NormalClass(value=com/bnorm/junit5/contingent/ContingentCallback)]<span class="symbol">)</span> <span class="keyword">annotation</span> <span class="keyword">class </span><span class="identifier">ContingentExtension</span></a></a><br/>
+<a href="/home/runner/work/junit5-contingent/junit5-contingent/build/dokka/junit5-contingent/index"><a href="com.bnorm.junit5.contingent/-contingent-extension/index.html"><span class="identifier">@TestMethodOrder</span><span class="symbol">(</span>NormalClass(value=com/bnorm/junit5/contingent/internal/ContingentSortOrder)<span class="symbol">)</span> <span class="identifier">@ExtendWith</span><span class="symbol">(</span>[NormalClass(value=com/bnorm/junit5/contingent/internal/ContingentCallback)]<span class="symbol">)</span> <span class="identifier">@Target</span><span class="symbol">(</span>[AnnotationTarget.CLASS]<span class="symbol">)</span> <span class="keyword">annotation</span> <span class="keyword">class </span><span class="identifier">ContingentExtension</span></a></a><br/>
 <ul>
 <HTML>
 <HEAD>
@@ -130,20 +86,6 @@
 </HEAD>
 <BODY>
 <a href="/home/runner/work/junit5-contingent/junit5-contingent/build/dokka/junit5-contingent/index"><a href="com.bnorm.junit5.contingent/-contingent-extension/-init-.html"><span class="identifier">ContingentExtension</span><span class="symbol">(</span><span class="symbol">)</span></a></a><br/>
-</BODY>
-</HTML>
-</ul>
-<a href="/home/runner/work/junit5-contingent/junit5-contingent/build/dokka/junit5-contingent/index"><a href="com.bnorm.junit5.contingent/-contingent-sort-order/index.html"><span class="keyword">class </span><span class="identifier">ContingentSortOrder</span>&nbsp;<span class="symbol">:</span>&nbsp;<span class="identifier">MethodOrderer</span></a></a><br/>
-<ul>
-<HTML>
-<HEAD>
-<meta charset="UTF-8">
-<title>Module Contents</title>
-<link rel="stylesheet" href="../style.css">
-</HEAD>
-<BODY>
-<a href="/home/runner/work/junit5-contingent/junit5-contingent/build/dokka/junit5-contingent/index"><a href="com.bnorm.junit5.contingent/-contingent-sort-order/-init-.html"><span class="identifier">ContingentSortOrder</span><span class="symbol">(</span><span class="symbol">)</span></a></a><br/>
-<a href="/home/runner/work/junit5-contingent/junit5-contingent/build/dokka/junit5-contingent/index"><a href="com.bnorm.junit5.contingent/-contingent-sort-order/order-methods.html"><span class="keyword">fun </span><span class="identifier">orderMethods</span><span class="symbol">(</span><span class="identifier" id="com.bnorm.junit5.contingent.ContingentSortOrder$orderMethods(org.junit.jupiter.api.MethodOrdererContext)/context">context</span><span class="symbol">:</span>&nbsp;<span class="identifier">MethodOrdererContext</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></a></a><br/>
 </BODY>
 </HTML>
 </ul>

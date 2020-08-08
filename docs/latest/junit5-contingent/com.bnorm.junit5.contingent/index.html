@@ -8,25 +8,6 @@
 <a href="../index.html">junit5-contingent</a>&nbsp;/&nbsp;<a href="./index.html">com.bnorm.junit5.contingent</a><br/>
 <br/>
 <h2>Package com.bnorm.junit5.contingent</h2>
-<h3>Types</h3>
-<table>
-<tbody>
-<tr>
-<td>
-<h4><a href="-contingent-callback/index.html">ContingentCallback</a></h4>
-</td>
-<td>
-<code><span class="keyword">class </span><span class="identifier">ContingentCallback</span>&nbsp;<span class="symbol">:</span>&nbsp;<span class="identifier">BeforeEachCallback</span><span class="symbol">, </span><span class="identifier">AfterEachCallback</span></code></td>
-</tr>
-<tr>
-<td>
-<h4><a href="-contingent-sort-order/index.html">ContingentSortOrder</a></h4>
-</td>
-<td>
-<code><span class="keyword">class </span><span class="identifier">ContingentSortOrder</span>&nbsp;<span class="symbol">:</span>&nbsp;<span class="identifier">MethodOrderer</span></code></td>
-</tr>
-</tbody>
-</table>
 <h3>Annotations</h3>
 <table>
 <tbody>
@@ -35,6 +16,10 @@
 <h4><a href="-contingent/index.html">Contingent</a></h4>
 </td>
 <td>
+<p>Marks the current <a href="#">Test</a> as being contingent on
+the success of other tests. Tests are matched using values specified by this
+annotation against other tests with equal <a href="#">Tag</a>
+values. If any test with any matching Tag fails, this test will be failed.</p>
 <code><span class="keyword">annotation</span> <span class="keyword">class </span><span class="identifier">Contingent</span></code></td>
 </tr>
 <tr>
@@ -42,6 +27,8 @@
 <h4><a href="-contingent-extension/index.html">ContingentExtension</a></h4>
 </td>
 <td>
+<p>Class-level extension annotation which must be applied for <a href="-contingent/index.html">Contingent</a>
+annotations to be used.</p>
 <code><span class="keyword">annotation</span> <span class="keyword">class </span><span class="identifier">ContingentExtension</span></code></td>
 </tr>
 </tbody>
