@@ -1,0 +1,4 @@
+$dokka.format:html
+$dokka.linkExtension:html
+
+com.bnorm.junit5.contingent
