@@ -1,6 +1,5 @@
 package com.bnorm.junit5.contingent
 
-import org.junit.jupiter.api.Assumptions
 import org.junit.jupiter.api.Tag
 import org.junit.jupiter.api.extension.AfterEachCallback
 import org.junit.jupiter.api.extension.BeforeEachCallback
@@ -36,7 +35,6 @@ class ContingentCallback : BeforeEachCallback, AfterEachCallback {
             if (annotation != null) {
                 val failed = annotation.values.intersect(failed)
                 if (failed.isNotEmpty()) {
-                    Assumptions.assumeFalse(annotation.skip, "Test blocked by failed gate(s): $failed")
                     fail("Test blocked by failed gate(s): $failed")
                 }
             }
