@@ -13,6 +13,9 @@ group = "com.bnorm.junit5.contingent"
 
 val release = tasks.findByPath(":release")
 release?.finalizedBy(tasks.publish)
+nebulaRelease {
+    addReleaseBranchPattern("main")
+}
 
 repositories {
     mavenCentral()
