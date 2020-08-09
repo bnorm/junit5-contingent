@@ -55,8 +55,9 @@ tasks.assemble { dependsOn(tasks.dokka) }
 
 signing {
     val signingKey = findProperty("signingKey") as? String
+    val signingPassword = findProperty("signingPassword") as? String ?: ""
     if (signingKey != null) {
-        useInMemoryPgpKeys(signingKey, "")
+        useInMemoryPgpKeys(signingKey, signingPassword)
     }
 
     setRequired(provider { gradle.taskGraph.hasTask("release") })
@@ -96,15 +97,12 @@ publishing {
     repositories {
         if (
             hasProperty("sonatypeUsername") &&
-            hasProperty("sonatypePassword") &&
-            hasProperty("sonatypeSnapshotUrl") &&
-            hasProperty("sonatypeReleaseUrl")
+            hasProperty("sonatypePassword")
         ) {
             maven {
-                val url = when {
-                    "SNAPSHOT" in version.toString() -> property("sonatypeSnapshotUrl")
-                    else -> property("sonatypeReleaseUrl")
-                } as String
+                val url =
+                    if ("SNAPSHOT" in version.toString()) "https://oss.sonatype.org/content/repositories/snapshots"
+                    else "https://oss.sonatype.org/service/local/staging/deploy/maven2"
                 setUrl(url)
                 credentials {
                     username = property("sonatypeUsername") as String
