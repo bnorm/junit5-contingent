@@ -31,6 +31,11 @@ dependencies {
     testImplementation("org.junit.platform:junit-platform-testkit:1.6.2")
 }
 
+java {
+    withSourcesJar()
+    withJavadocJar()
+}
+
 tasks.withType<KotlinCompile> {
     kotlinOptions.jvmTarget = "1.8"
 }
